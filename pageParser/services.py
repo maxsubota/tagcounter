@@ -1,4 +1,3 @@
-from service_objects.services import Service
 from lxml import html
 import requests
 import logging
