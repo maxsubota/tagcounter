@@ -26,7 +26,7 @@ You should already know what is [virtualenv](http://www.virtualenv.org/). So, si
 `$ virtualenv --clear projectname`
 
 ### 2. Download
-Now, you need the *django-sample-app* project files in your workspace:
+Now, you need the *django-tagcounter* project files in your workspace:
 
     $ cd /path/to/your/workspace
     $ git clone https://github.com/maxsubota/tagcounter.git projectname && cd projectname
@@ -40,7 +40,8 @@ Right there, you will find the *requirements.txt* file that has all the great de
 
 
 #### Initialize the database
-First set the database engine (PostgreSQL, MySQL, etc..) in your settings files; `projectname/settings/default.py` and/or `projectname/settings/local.py`. Of course, remember to install necessary database driver for your engine. Then define your credentials as well. Time to finish it up:
+
+`./manage.py makemigrations`
 
 `./manage.py migrate`
 
