@@ -15,7 +15,7 @@
                             </div>
                             <!--end of col-->
                             <div class="col">
-                                <input name="website" class="form-control form-control-lg form-control-borderless" type="search" placeholder="Input a website">
+                                <input name="website" class="form-control form-control-lg form-control-borderless" type="search" value="{{ website }}" placeholder="Input a website as http://...">
                             </div>
                             <!--end of col-->
                             <div class="col-auto">
@@ -25,9 +25,17 @@
                         </div>
                     </form>
                 </div>
-                {% if website %}
+                <br/><br/>
+                {% if error_message %}
+                <div class="col-12 col-md-10 col-lg-8">
+                        <p>URL is invalid</p>
+                </div>
+                {% endif %}
+                {% if tag_statistic %}
                     {% include "statistic.html" %}
                 {% endif %}
+
+
 
                 <!--end of col-->
     </div>
