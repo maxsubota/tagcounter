@@ -1,4 +1,4 @@
-Django==2.1.4
+Django==2.2.13
 chardet==3.0.4
 decorator==4.3.0
 idna==2.8
