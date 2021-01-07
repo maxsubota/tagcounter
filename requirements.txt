@@ -2,7 +2,7 @@ Django==2.1.4
 chardet==3.0.4
 decorator==4.3.0
 idna==2.8
-lxml==4.2.5
+lxml==4.6.2
 pytz==2018.7
 requests==2.21.0
 setuptools==39.1.0
